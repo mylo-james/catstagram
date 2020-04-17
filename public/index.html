@@ -7,30 +7,32 @@
     <title>Catstagram</title>
   </head>
   <body>
-    <section class="container">
-      <h1>Kitten Pic</h1>
+    <h1>Catstagram</h1>
+    <section class="container1">
       <button id="new-pic">New Pic!</button>
-      <div class="loader"></div>
-      <div class="error"></div>
-      <img class="cat-pic" src="" />
+      <div id="img-holder">
+        <img class="cat-pic" src="" />
+      </div>
+      <div class="status"></div>
       <div class="score-container">
         <div class="score-display">
           <span>Popularity Score: </span>
           <span class="score">0</span>
         </div>
-        <div>
-          <button id="upvote">Upvote</button>
-          <button id="downvote">Downvote</button>
+        <div id="vote-buttons">
+          <button id="upvote">Like</button>
+          <button id="downvote">Dislike</button>
         </div>
       </div>
+    </section>
+    <section class="container2">
+      <div class="comments"></div>
       <form class="comment-form">
         <div class="user-comment-container">
-          <label for="user-comment">Comment:</label>
           <input required name="user-comment" id="user-comment" class="user-comment" placeholder=" Add a comment... " />
         </div>
-        <input type="submit" value="Submit" />
+        <input id="submit-button" type="submit" value="Submit" />
       </form>
-      <div class="comments"></div>
     </section>
 
     <script src="./events.js"></script>
