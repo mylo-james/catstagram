@@ -21,6 +21,9 @@
 
 .cat-pic {
   margin: 20px;
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
 }
 
 .score-container {
